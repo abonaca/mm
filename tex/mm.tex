@@ -1,0 +1,104 @@
+% This file is part of the Moving Mesh project.
+% Copyright 2017 the authors. All rights reserved.
+
+\documentclass[modern]{aastex61}
+
+\usepackage{url}
+% \pagestyle{plain}
+% \usepackage[pass,letterpaper]{geometry}
+
+% typography
+\setlength{\parindent}{1.\baselineskip}
+% \newcommand{\acronym}[1]{{\small{#1}}}
+% \newcommand{\CRLB}{\acronym{CRLB}}
+
+% aastex parameters
+%%\hypersetup{linkcolor=red,citecolor=green,filecolor=cyan,urlcolor=magenta}
+% \received{not yet; THIS IS A DRAFT}
+%\revised{not yet}
+%\accepted{not yet}
+%% Adds "Submitted to " the arguement.
+%\submitjournal{ApJ}
+\shorttitle{Kinematics of cold stellar streams}
+\shortauthors{Bonaca et al.}
+
+\begin{document}
+\sloppy\sloppypar\raggedbottom\frenchspacing
+
+\title{A Moving Mesh: Kinematics of cold stellar streams in the Milky Way}
+
+\correspondingauthor{Ana Bonaca}
+\email{ana.bonaca@cfa.harvard.edu}
+
+\author[0000-0002-7846-9787]{Ana Bonaca}
+\affil{Harvard--Smithsonian Center for Astrophysics}
+
+\author{coauthors}
+
+\begin{abstract}
+\noindent
+Large-scale photometric surveys have revealed that the halo of the Milky Way is crisscrossed with cold stellar streams.
+These structures are faint and diffuse, so out of several dozen of discovered streams, only a handful have been followed up spectroscopically.
+Within the Moving Mesh project, we are employing large field-of-view spectroscopes on 6.5\,m telescopes to kinematically characterize cold streams in the Milky Way.
+This is the first in a series of Moving Mesh papers, where we targeted the disrupting globular cluster NGC~5466 and a distant stellar stream Styx, and provide kinematic information of their tidal debris for the first time.
+\end{abstract}
+
+% \keywords{}
+
+
+% \section{Introduction}
+% \label{sec:intro}
+% 
+% Tidal tails around NGC~5466 were discovered by \citet{belokurov2006} and \citet{gj2006}.
+
+
+\section{Data}
+\label{sec:data}
+We observed the tidal tails of NGC~5466 and Styx stellar streams with MMT/Hectochelle \citep{hectospec} in February and May 2017.
+The observations were taken using the 110\,$l$/mm grating and the `RV31' order-blocking filter over the wavelength range 5150--5300\,\AA, with exposure times of 1.5\,hours per field.
+A total of three NGC~5466 and four Styx fields were observed.
+The basic image reduction was done by the TDC \citep{hectoredux}, and the radial velocities were measured following \citet{caldwell2017}.
+Out of 739 targets along the NGC~5466 tidal tails, we were able to obtain radial velocities for 251 stars.
+For Styx, the success rate was higher, and radial velocity measurements were made for 604 out of 867 targeted stars.
+Median velocity uncertainty is $\lesssim1\;$km/s for both streams.
+Our preliminary results are summarized in Figures~\ref{fig:summary_ngc5466} and \ref{fig:summary_styx} for NGC~5466 and Styx, respectively.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{../plots/summary_ngc5466.pdf}
+\caption{Summary of NGC~5466 observations.
+(\emph{Left}) Velocity distribution of MMT/Hectochelle targets with well-measured radial velocities (empty black histogram).
+The expected distribution for a smooth halo from the Besan\c{c}on model is shown as an orange-filled histogram.
+We define kinematic membership to the NGC~5466 stream for stars with radial velocities between $\sim80-140\;$km/s, where the Milky Way measurements show a clear overabundance, and highlight this range in gray.
+(\emph{Center}) Color-magnitude diagram of targeted stars (gray) and kinematic members (black).
+Targets were selected using an old and metal-poor isochrone at a distance of 16.2\,kpc.
+Several of the potential member stars are on the BHB, while the rest are at the main sequence turn-off ($r\sim19$), with very few members along the RGB.
+(\emph{Right}) Radial velocity of NGC~5466 members as a function of R.A.
+Close to the cluster ($\rm R.A.=211.364^\circ$), there is no discernible gradient in radial velocity, but potential members in the most distant field, $\rm R.A.\approx202.5^\circ$, have a large velocity spread.}
+\label{fig:summary_ngc5466}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{../plots/summary_styx.pdf}
+\caption{Summary of Styx observations.
+(\emph{Left}) Velocity distribution of MMT/Hectochelle targets with well-measured radial velocities (empty black histogram).
+The expected distribution for a smooth halo from the Besan\c{c}on model is shown as an orange-filled histogram.
+We define kinematic membership to the Styx stream for stars with radial velocities between $-240\;$km/s and $-120\;$km/s, where the Milky Way measurements show a clear overabundance, and highlight this range in gray.
+(\emph{Center}) Color-magnitude diagram of targeted stars (gray) and kinematic members (black).
+Targets were selected using an old and metal-poor isochrone at a distance of 48\,kpc.
+Some of the kinematic members are potentially BHB stars ($g-r\lesssim0.4$), while most are found along the RGB.
+(\emph{Right}) Radial velocity of Styx members as a function of R.A.
+The contamination from the Milky Way foreground among the potential kinematic members is on the order of $\sim50\%$, so determining the radial velocity along the stream more precisely would benefit from measuring surface gravities and removing dwarf stars from this sample.}
+\label{fig:summary_styx}
+\end{center}
+\end{figure}
+
+\vspace{5.5cm}
+\emph{Acknowledgments:}
+This paper uses data products produced by the OIR Telescope Data Center, supported by the Smithsonian Astrophysical Observatory.
+
+\bibliography{mm}
+
+\end{document}
